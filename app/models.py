@@ -3,12 +3,9 @@ from app.extensions import db
 
 class User(db.Model):
     __tablename__ = "user"
-    username = db.Column(db.String(), primary_key=True)
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(40), unique=True)
     password = db.Column(db.LargeBinary())
 
     def __repr__(self):
         return "User: " + self.username
-
-    def save_to_db(self):
-        db.session.add(self)
-        db.session.commit()
