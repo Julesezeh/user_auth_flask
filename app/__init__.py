@@ -3,6 +3,9 @@ from app.extensions import api, db, migration
 from app.models import *
 from app.config import Config
 from app.blueprint import app_bp
+import logging
+
+logging.basicConfig(filename="logs.py")
 
 
 def create_app():
