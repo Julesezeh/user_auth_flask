@@ -5,7 +5,7 @@ from app.config import Config
 from app.blueprint import app_bp
 import logging
 
-logging.basicConfig(filename="logs.py")
+logging.basicConfig(filename="logs.log")
 
 
 def create_app():
