@@ -5,14 +5,14 @@ from app.config import Config
 from app.blueprint import app_bp
 import logging
 
-logging.basicConfig(filename="logs.log")
+logger = logging.basicConfig(filename="logs.log", datefmt="%(asctime)s")
 
 
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
     app.register_blueprint(app_bp)
-    api.init_app(app)
+    # api.init_app(app)
     db.init_app(app)
     migration.init_app(app, db)
     # db.create_all()
