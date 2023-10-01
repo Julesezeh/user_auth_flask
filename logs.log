@@ -1,3 +1,83 @@
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:36:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:36:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 08:36:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:13:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:39:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:40:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:43:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:44:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:34] "[36mGET /swaggerui/swagger-ui.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:34] "[36mGET /swaggerui/droid-sans.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:35] "[36mGET /swaggerui/swagger-ui-bundle.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:35] "[36mGET /swaggerui/swagger-ui-standalone-preset.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:35] "GET /swagger.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:35] "[36mGET /swaggerui/favicon-32x32.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [30/Sep/2023 09:45:57] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 08:22:33] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\blueprint.py", line 10, in index
+    app.logger.info("Works fine")
+    ^^^^^^^^^^
+AttributeError: module 'flask.app' has no attribute 'logger'
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:09:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:13:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:19:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:20:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:24:43] "GET / HTTP/1.1" 200 -
