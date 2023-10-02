@@ -1,9 +1,9 @@
-from .blueprint import app_bp
-from app import logger
+import app
 from flask import request, Response, render_template
+from flask import current_app
 
 
-@app_bp.register("/")
+@app.route("/")
 def index():
-    logger.info("works fine")
+    current_app.logger.info("works fine")
     return "Hello World"
