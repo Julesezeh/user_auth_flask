@@ -81,3 +81,232 @@ INFO:werkzeug: * Restarting with stat
 INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\blueprint.py', reloading
 INFO:werkzeug: * Restarting with stat
 INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:24:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:28:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import resources
+ModuleNotFoundError: No module named 'resources'
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:28:23] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 6, in <module>
+    @app_bp.register("/")
+     ^^^^^^^^^^^^^^^^^^^^
+TypeError: Blueprint.register() missing 1 required positional argument: 'options'
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:29:22] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 1, in <module>
+    from app import app
+ImportError: cannot import name 'app' from 'app' (C:\Code\user_auth_flask\app\__init__.py)
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 10:30:48] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 6, in <module>
+    @app.route("/")
+     ^^^^^^^^^^^^^^
+AttributeError: module 'app' has no attribute 'route'
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Code\\user_auth_flask\\app\\resources.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 16:08:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 6, in <module>
+    @app.route("/")
+     ^^^^^^^^^^^^^^
+AttributeError: module 'app' has no attribute 'route'
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 16:37:20] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 6, in <module>
+    @app.route("/")
+     ^^^^^^^^^^^^^^
+AttributeError: module 'app' has no attribute 'route'
+INFO:werkzeug:127.0.0.1 - - [01/Oct/2023 16:37:21] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:werkzeug:Error on request:
+Traceback (most recent call last):
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 364, in run_wsgi
+    execute(self.server.app)
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\werkzeug\serving.py", line 325, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 907, in app
+    raise err from None
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 898, in run_command
+    app = info.load_app()
+          ^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 313, in load_app
+    app = locate_app(import_name, None, raise_if_not_found=False)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 236, in locate_app
+    return find_best_app(module)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\ProjectVenv\Lib\site-packages\flask\cli.py", line 64, in find_best_app
+    app = app_factory()
+          ^^^^^^^^^^^^^
+  File "C:\Code\user_auth_flask\app\__init__.py", line 13, in create_app
+    import app.resources
+  File "C:\Code\user_auth_flask\app\resources.py", line 6, in <module>
+    @app.route("/")
+     ^^^^^^^^^^^^^^
+AttributeError: module 'app' has no attribute 'route'
