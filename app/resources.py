@@ -5,5 +5,5 @@ from flask import current_app
 
 @app.route("/")
 def index():
-    current_app.logger.info("Keep the streak alive")
+    current_app.logger.info("Log still not getting displayed")
     return "Hello World"
