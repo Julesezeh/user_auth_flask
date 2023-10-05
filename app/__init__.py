@@ -14,6 +14,7 @@ def create_app():
 
     app.config.from_object(Config)
     app.register_blueprint(app_bp)
+    logger.info("works fine")
     # api.init_app(app)
     db.init_app(app)
     migration.init_app(app, db)
