@@ -10,7 +10,6 @@ logger = logging.basicConfig(filename="logs.log", datefmt="%(asctime)s")
 
 def create_app():
     app = Flask(__name__)
-    import app.resources
 
     app.config.from_object(Config)
     app.register_blueprint(app_bp)
